@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+*{
+    color: #292f36;
+    font-size: 20px;
+}
+div[id^="__next"] > div[class^="bg-light"]{
+    min-height: 100vh;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-weight: bold;
+}
+textarea{
+    height: 150px !important;
+}
+.imgLogo:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.accent{
+    color: #6200ee;
+    font-weight: bold;
+}
+.img-ppal{
+    filter: drop-shadow(2px 4px 4px rgb(196, 196, 196));
+}
+.btn-primary{
+    border-color: #6200ee !important;            
+    background-color: #6200ee !important;            
+}
+.btn-primary:hover{
+    background-color: #292f36 !important;            
+    border-color: transparent !important;            
+}
+.btn-outline-primary{
+    color: #292f36 !important;
+    border-color: #6200ee !important;            
+    background-color: transparent !important;     
+}
+.btn-outline-primary:hover{
+    color: #fff !important;
+    background-color: #6200ee !important;            
+}
+.tarjeta{
+    background-color: #d3d3d41f;
+}
+.tarjeta:nth-child(2n){
+    border-radius: 68% 32% 65% 35% / 30% 29% 71% 70%;    
+}
+.tarjeta:nth-child(2n+1){
+    border-radius:41% 59% 73% 27% / 26% 51% 49% 74% ;    
+}
