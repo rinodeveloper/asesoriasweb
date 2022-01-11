@@ -18,8 +18,8 @@ Aunque el sitio es estático y parece muy sencillo, tiene cositas pro como:
 
 * Integración con Bootstrap CSS y su paquete de Iconos
 
+* Integración con reCaptcha v2 de Google
+
 * Next Routes
-
-
 
 Thanks!
