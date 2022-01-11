@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react';
+import React, { useRef } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 async function sendMail(){  
@@ -60,7 +60,7 @@ async function sendMail(){
 export default function Contacto() {
   
   
-    const recaptchaRef = React.createRef()
+    const recaptchaRef = useRef<ReCAPTCHA>(null)
     
     const handleSubmit = async (event) => {
       event.preventDefault()
