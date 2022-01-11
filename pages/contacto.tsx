@@ -58,14 +58,20 @@ async function sendMail(){
 
 
 export default function Contacto() {
-
+  
+  
+    const recaptchaRef = React.createRef()
     
-    const recaptchaRef = React.createRef();
-    const handleSubmit = (event) => {
-      event.preventDefault();
-      // Execute the reCAPTCHA when the form is submitted
-      const captcha = recaptchaRef.current as HTMLFormElement
-      captcha.execute()
+    const handleSubmit = async (event) => {
+      event.preventDefault()
+
+      try {
+        // Execute the reCAPTCHA when the form is submitted
+        const captcha = recaptchaRef.current as HTMLFormElement
+        captcha.execute()        
+      } catch(error) {
+        console.log('Error para cargar el g-captcha');        
+      }
     }
 
     const onReCAPTCHAChange = (captchaCode) => {
@@ -76,7 +82,7 @@ export default function Contacto() {
       sendMail()
       
       // Reset the reCAPTCHA so that it can be executed again if user 
-      // submits another email.
+      // submits another email.   
       const captcha = recaptchaRef.current as HTMLFormElement
       captcha.reset()
     }
