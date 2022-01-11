@@ -13,9 +13,8 @@ export default function Home() {
           className={'container d-flex flex-wrap flex-row'}
         >
         <section className={'col-12 col-md-7 col-sm-12 d-flex flex-column'}>
-          <h1 className={'accent'}>Oscar Riascos {'>'} </h1>
-          <h2 className={'fw-bold '}>Analista de sistemas &</h2>
-          <h2 className={'accent '}> Desarrollador web.</h2>
+          <h1 className={'accent'}>Oscar R!ascos {'>'} </h1>
+          <h2 className={'fw-bold '}>Analista de sistemas</h2>
           <p>
             Un autodidacta apasionado por las nuevas tecnologías.
             <br/>
@@ -95,7 +94,7 @@ export default function Home() {
         <div className={'d-flex justify-content-center col-12 mt-5'}>
           <Link
             href={'/contacto'}>
-            <a className={'btn btn-outline-primary btn-lg'}>Contactar</a>
+            <a className={'btn btn-primary btn-lg'}>Solicitar asesoría</a>
           </Link>
         </div>
 
