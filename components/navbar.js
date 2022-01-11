@@ -12,7 +12,7 @@ export default function navbar({ children }) {
                     <a className={"navbar-brand"} >
                         <Image
                             src={LogoDark}
-                            alt="Picture of the author"
+                            alt="Logo IT Consulting"
                             height={48}
                             width={48}
                             className={'imgLogo'}
