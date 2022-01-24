@@ -177,7 +177,7 @@ export default function Contacto() {
               </div>
               <div className="modal-body">
                 <p>
-                  ¡Te responderé en breve !
+                  ¡Te responderé en breve!
                 </p>
               </div>
             </div>
