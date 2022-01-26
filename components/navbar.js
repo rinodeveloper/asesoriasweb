@@ -18,7 +18,7 @@ export default function navbar({ children }) {
                             className={'imgLogo'}
                         />
                     </a>
-                </Link>
+                </Link>                
                 <div>
                     <div className={' ms-md-auto'}>
                         <ul className={"navbar-nav"}>                 

@@ -91,9 +91,9 @@ export default function Contacto() {
     return (
       <>
         <SEO 
-          description={ 'Solicitar asesoría digital para tu emprendimiento.' }
+          description={ 'Comienza tu asesoría digital para impulsar tu emprendimiento.' }
           title={ process.env.APP_NAME }
-          siteTitle={ 'Entrar en contacto' }
+          siteTitle={ 'Solicitar asesoría' }
         />         
         <form
           id={'contact-form'}

@@ -9,8 +9,8 @@ export default function Home() {
       <>
         <SEO 
           description={ '¿Quieres traer tu emprendimiendo a Internet? ¡Te ayudamos a lograrlo!' }
-          title={ 'Oscar Riascos' }
-          siteTitle={ process.env.APP_NAME }
+          title={ process.env.APP_NAME }
+          siteTitle={ 'Nuestros servicios'}
         />  
         <div
           className={'container d-flex flex-wrap flex-row'}
