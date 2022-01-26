@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { useRef } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import SEO from '../components/seo'
 
 async function sendMail(){  
 
@@ -89,9 +90,11 @@ export default function Contacto() {
 
     return (
       <>
-        <Head>
-          <title>{process.env.APP_NAME + 'Contactar'}</title>
-        </Head>       
+        <SEO 
+          description={ 'Solicitar asesoría digital para tu emprendimiento.' }
+          title={ process.env.APP_NAME }
+          siteTitle={ 'Entrar en contacto' }
+        />         
         <form
           id={'contact-form'}
           onSubmit={handleSubmit}

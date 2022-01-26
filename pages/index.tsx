@@ -1,19 +1,22 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import SEO from '../components/seo'
 
 
 export default function Home() {
     return (
       <>
-        <Head>
-          <title>{process.env.APP_NAME + 'Servicios de IT Freelance'}</title>
-        </Head>
+        <SEO 
+          description={ '¿Quieres traer tu emprendimiendo a Internet? ¡Te ayudamos a lograrlo!' }
+          title={ 'Oscar Riascos' }
+          siteTitle={ process.env.APP_NAME }
+        />  
         <div
           className={'container d-flex flex-wrap flex-row'}
         >
         <section className={'col-12 col-md-7 col-sm-12 d-flex flex-column'}>
-          <h1 className={'accent'}>Oscar R!ascos {'>'} </h1>
+          <h1 className={'accent'}>Oscar Riascos {'>'} </h1>
           <h2 className={'fw-bold '}>Analista de sistemas</h2>
           <p>
             Un autodidacta apasionado por las nuevas tecnologías.
@@ -62,9 +65,15 @@ export default function Home() {
           <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
             <div className={'my-3 py-3'}>
               <h2 className={'display-6 fw-bolder'}>Redes Sociales</h2>
-              <p className={'lead'}>Creación y gestión de cuentas</p>
+              <p className={'lead'}>Introducción y gestión</p>
             </div>
           </div>  
+          <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
+            <div className={'my-3 py-3'}>
+              <h2 className={'display-6 fw-bolder'}>Soporte remoto</h2>
+              <p className={'lead'}>Asesorías</p>
+            </div>
+          </div>
           <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
             <div className={'my-3 py-3'}>
               <h2 className={'display-6 fw-bolder'}>Trámites online</h2>
@@ -83,12 +92,6 @@ export default function Home() {
               <p className={'lead'}>Con API`s de terceros</p>
             </div>
           </div>   
-          <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
-            <div className={'my-3 py-3'}>
-              <h2 className={'display-6 fw-bolder'}>Otras cositas</h2>
-              <p className={'lead'}>Asesorías y soporte</p>
-            </div>
-          </div>
         </section>
 
         <div className={'d-flex justify-content-center col-12 mt-5'}>
