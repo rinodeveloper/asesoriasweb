@@ -12,7 +12,7 @@ Por defecto el proyecto se ejecutará en [http://localhost:3000](http://localhos
 
 ## Detalles de sitio
 
-Aunque el sitio es estático y parece muy sencillo, tiene cositas pro como:
+Aunque el sitio parece muy simple, tiene cositas pro como estas:
 
 * Formulario de contacto usando el API de SendinBlue
 
@@ -20,6 +20,7 @@ Aunque el sitio es estático y parece muy sencillo, tiene cositas pro como:
 
 * Integración con reCaptcha v2 de Google
 
-* Next Routes
+* Google Analytics
+
 
 Thanks!

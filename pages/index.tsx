@@ -55,6 +55,7 @@ export default function Home() {
             alt={'Imágen de presentación sobre consultoría'}
             width={500}
             height={500}
+            priority={true}
             className={'img-fluid img-ppal'}
           />
         </section>
