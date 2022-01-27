@@ -41,7 +41,7 @@ export default function Home() {
             <div className={'col-md-6 col-sm-8 d-flex justify-content-between mt-4'}>
               <a
                 className={'btn btn-primary btn-lg col-6 col-sm-8'}
-                href={'#skills'}
+                href={'#servicios'}
                 >
                 Servicios
                 </a>
@@ -60,7 +60,7 @@ export default function Home() {
         </section>
         <section 
           className={'d-flex flex-row flex-wrap col-12 justify-content-around mt-5'}
-          id={'skills'}
+          id={'servicios'}
           >
           <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
             <div className={'my-3 py-3'}>
