@@ -71,7 +71,7 @@ export default function Home() {
           </div>  
           <div className={'bg-ligth me-md-2 pt-2 text-center col-md-5 col-12 my-sm-2 my-2 tarjeta'}>
             <div className={'my-3 py-3'}>
-              <h2 className={'display-6 fw-bolder'}>Soporte remoto</h2>
+              <h2 className={'display-6 fw-bolder'}>Soporte Remoto</h2>
               <p className={'lead'}>Asesorías</p>
             </div>
           </div>
