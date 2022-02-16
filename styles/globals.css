@@ -53,3 +53,9 @@ textarea{
 .tarjeta:nth-child(2n+1){
     border-radius:41% 59% 73% 27% / 26% 51% 49% 74% ;    
 }
+.btn-services{
+    fill: #212529 !important;
+}
+.btn-services:hover{
+    fill: #ffffff !important;
+}

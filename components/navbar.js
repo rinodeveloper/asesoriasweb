@@ -25,7 +25,7 @@ export default function navbar({ children }) {
                             <li className={"nav-item"}>
                                 <Link 
                                     href="/contacto">
-                                    <a className={"btn btn-outline-primary btn-md-lg"}>Contactar</a>
+                                    <a className={"btn btn-primary btn-lg"}>Contactar</a>
                                 </Link>
                             </li>
                         </ul>
