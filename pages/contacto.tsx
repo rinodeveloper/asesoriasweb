@@ -101,7 +101,7 @@ export default function Contacto() {
           className={'container-fluid col col-md-6 col-sm-12 m-auto needs-validation'}
           >                    
             <div className={'row text-center'}>
-                <h2 className={'m-auto mb-4'}>Hablemos de tu necesidad</h2>
+                <h2 className={'m-auto mb-4'}>¡Empecemos!</h2>
             </div>
             <div className={'form-floating mb-3'}>
                 <input 
