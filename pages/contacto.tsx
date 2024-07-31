@@ -23,8 +23,8 @@ async function sendMail() {
     },
     body: JSON.stringify({
       sender: {
-        name: name,
-        email: email,
+        name: process.env.APP_NAME,
+        email: process.env.RECIPIENT_EMAIL,
       },
       to: [
         {
