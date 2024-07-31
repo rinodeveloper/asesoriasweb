@@ -1,4 +1,3 @@
-import Head from "next/head";
 import React, { useRef } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import SEO from "../components/seo";
@@ -16,7 +15,6 @@ async function sendMail() {
   const email = form.inputMail.value;
   const message = form.inputMessage.value;
 
-  //Simple POST request with a JSON body using fetch - Sendin Blue
   const requestOptions = {
     method: "POST",
     headers: {
@@ -40,17 +38,13 @@ async function sendMail() {
     }),
   };
 
-  //Return response
   fetch(process.env.SENDIN_BLUE_API, requestOptions)
     .then((response) => response.json())
     .then((data) => {
-      //If message was send
       if (data.messageId) {
-        //Reset form
         form.reset();
         document.getElementById("btnSuccess").click();
       } else {
-        //If an error for send message, then...
         btnEnviar.disabled = false;
         document.getElementById("btnError").click();
       }
@@ -61,12 +55,25 @@ async function sendMail() {
 
 export default function Contacto() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const captcha = recaptchaRef.current as HTMLFormElement;
+      captcha.execute();
+    } catch (error) {
+      console.log("Error para cargar el g-captcha");
+    }
+  };
+
   const onReCAPTCHAChange = (captchaCode) => {
     if (!captchaCode) {
       return;
     }
 
     sendMail();
+
     const captcha = recaptchaRef.current as HTMLFormElement;
     captcha.reset();
   };
@@ -82,9 +89,7 @@ export default function Contacto() {
       />
       <form
         id={"contact-form"}
-        onSubmit={() => {
-          recaptchaRef.current.execute();
-        }}
+        onSubmit={handleSubmit}
         className={
           "container-fluid col col-md-6 col-sm-12 m-auto needs-validation"
         }

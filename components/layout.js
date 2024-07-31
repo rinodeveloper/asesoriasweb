@@ -1,15 +1,14 @@
 import Head from 'next/head'
 import Navbar from './navbar'
-import Footer from './footer' 
+import Footer from './footer'
 import Script from 'next/script'
-
 
 export default function Layout({ children }) {
   return (
     <>
-      <Script 
+      <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`} 
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG_ID}`}
       />
       <Script
         id="gtag-init"
@@ -30,9 +29,9 @@ export default function Layout({ children }) {
       </Head>
       <div className={'bg-light'}>
         <Navbar />
-          <main className={'container'}>
-            {children}
-          </main>
+        <main className={'container'}>
+          {children}
+        </main>
         <Footer />
       </div>
     </>

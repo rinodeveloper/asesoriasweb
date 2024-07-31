@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import Layout from '../components/layout'
 
-//Load bootstrap files
 if (typeof window !== "undefined") {
   require("@popperjs/core");
   require("bootstrap/dist/js/bootstrap");
@@ -13,4 +12,5 @@ export default function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
     </Layout>
-  )}
+  )
+}
