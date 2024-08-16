@@ -13,4 +13,4 @@ En caso de que nuestra aplicación incluya publicidad, nos aseguramos de que tod
 Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Si realizamos cambios importantes, actualizaremos la política en esta misma sección de la aplicación. Recomendamos a los usuarios revisar esta política periódicamente para mantenerse informados.
 
 5. Contacto
-Si tienes alguna pregunta o inquietud sobre nuestra política de privacidad o el uso de la aplicación, no dudes en contactarnos a través del correo electrónico [tucorreo@example.com].
+Si tienes alguna pregunta o inquietud sobre nuestra política de privacidad o el uso de la aplicación, no dudes en contactarnos a través del correo electrónico [oriascos@proton.me].
